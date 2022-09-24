@@ -1,0 +1,128 @@
+@use "./variables.scss";
+
+.advantages-block {
+  background-color: #eeeeee;
+}
+
+.advantages-block__description {
+  padding: 39px 0 39px;
+  text-align: center;
+
+  &--primary {
+    color: #ffffff;
+    background-color: #81b3d2;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  &--secondary {
+    margin: 0 18px;
+    padding: 25px 18px 24px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #d6d6d6;
+    }
+  }
+}
+
+.advantages-block__padding {
+  padding-bottom: 35px;
+}
+
+.advantages-block__image {
+  display: block;
+}
+
+.advantages-block__title {
+  margin-bottom: 11px;
+}
+
+.advantages-block__number {
+  display: block;
+  margin-bottom: 17px;
+}
+
+@media (max-width: variables.$mobile-width-only) {
+  .advantages-block__figure {
+    position: relative;
+    padding-top: 71px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 37px;
+      background-image: url("../../img/bg-figure/bg-figure-advantage.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      content: "";
+    }
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .advantages-block__description {
+    width: 256px;
+    padding: 40px 19px 44px;
+
+    &--secondary {
+      padding-top: 43px;
+      padding-bottom: 41px;
+    }
+
+    &--secondary:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  .advantages-block__opposite {
+    order: 2;
+  }
+
+  .advantages-block__padding {
+    padding: 43px 22px 41px;
+  }
+
+  .advantages-block__image {
+    width: 512px;
+    height: 256px;
+  }
+
+  .advantages-block__title {
+    font-size: 21px;
+    padding: 0 31px;
+  }
+
+  .advantages-block__number {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .advantages-block__description {
+    width: 400px;
+    padding: 47px 52px 56px;
+
+    &--secondary {
+      padding: 43px 40px 61px;
+    }
+  }
+
+  .advantages-block__padding {
+    padding: 50px 63px 54px;
+  }
+
+  .advantages-block__title {
+    margin-bottom: 14px;
+    padding: 0 62px;
+  }
+
+  .advantages-block__number {
+    margin-bottom: 23px;
+  }
+
+  .advantages-block__image {
+    width: 800px;
+  }
+}

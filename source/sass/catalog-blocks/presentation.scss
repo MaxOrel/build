@@ -1,0 +1,74 @@
+@use "./variables.scss";
+
+.presentation {
+  padding-top: 17px;
+  text-align: center;
+}
+
+.presentation__text-wrapper {
+  margin-bottom: 38px;
+  padding: 0 25px;
+}
+
+.presentation__title {
+  margin-bottom: 27px;
+}
+
+.presentation__video-wrapper {
+  position: relative;
+}
+
+.presentation__button {
+  position: absolute;
+  top: 50%;
+  left: 170px;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 54px;
+  display: block;
+  background: transparent;
+  background-image: url("../../img/icon/icon-play-button.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .presentation {
+    padding: 56px 0 40px;
+  }
+
+  .presentation__text-wrapper {
+    margin-bottom: 89px;
+    padding: 0 160px;
+  }
+
+  .presentation__title {
+    font-size: 30px;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
+
+  .presentation__image {
+    width: 648px;
+    height: 500px;
+  }
+
+  .presentation__button {
+    left: 50%;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .presentation {
+    padding: 60px 200px 84px;
+  }
+
+  .presentation__text-wrapper {
+    padding: 0 178px;
+  }
+
+  .presentation__image {
+    width: 800px;
+    padding: 0;
+  }
+}

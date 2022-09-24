@@ -1,0 +1,39 @@
+@use "./variables.scss";
+
+.main-footer {
+  padding: 23px 18px 23px;
+  text-align: center;
+}
+
+.main-footer__hashtag {
+  margin-right: 2px;
+  margin-bottom: 33px;
+}
+
+.main-footer__social {
+  margin-left: 3px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 61px 36px 59px;
+  }
+
+  .main-footer__hashtag {
+    margin: 0;
+  }
+
+  .main-footer__social {
+    margin: 0;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .main-footer {
+    padding: 30px 120px 36px 119px;
+  }
+}

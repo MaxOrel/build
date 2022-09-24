@@ -1,0 +1,54 @@
+@use "./variables.scss";
+
+.about {
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+.about__background {
+  width: 320px;
+  margin-bottom: 34px;
+  padding: 90px 0 85px;
+}
+
+.about__text-wrapper {
+  padding-left: 18px;
+  padding-right: 20px;
+}
+
+.about__slogan {
+  margin-bottom: 35px;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .about {
+    padding-bottom: 55px;
+  }
+
+  .about__background {
+    margin-bottom: 49px;
+    padding: 77px 0 91px;
+  }
+
+  .about__slogan {
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 29px;
+  }
+}
+
+
+@media (min-width: variables.$desktop-width) {
+  .about {
+    padding-bottom: 44px;
+  }
+
+  .about__background {
+    margin-bottom: 60px;
+  }
+
+  .about__text-wrapper {
+    padding-left: 320px;
+    padding-right: 320px;
+  }
+}
